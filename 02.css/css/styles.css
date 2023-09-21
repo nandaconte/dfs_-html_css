@@ -1,0 +1,455 @@
+/* p {
+    color: violet;
+    font-size: 90px;
+} */
+
+/* 08 - Classes */
+
+
+body{
+    padding-bottom: 500px ;
+}
+
+.paragraph{
+
+    background-color: #000;
+    color:aqua;
+    padding: 5px;
+}
+
+#exclusive-title{
+    background-color: purple;
+    color: beige;
+    padding: 10px;
+    font-size: 40px;
+}
+
+/* 10 */
+
+h2 {
+    border-bottom: 2px dotted red;
+}
+
+.titulo{
+    border-bottom: 3px solid blue ;
+}
+
+#algum-titulo {
+    border-bottom: 4px solid green ;
+}
+
+/* 11 */
+
+.color-name{
+    color: crimson;
+}
+
+/* 12 - HEX */
+.hex{
+    color: #55a398
+}
+
+.hex-2{
+    color: #00eaff
+}
+
+/* 13 */
+
+.simple-hex{
+    /* color: #333333; */
+    color: #333;
+
+}
+
+.simple-hex-2{
+    /* color: #aa55ff; */
+    color: #a5f;
+}
+
+/* 14 - RGB */
+
+.rgb{
+    color: rgb(255,0,0)
+}
+
+.mixed-rgb{
+    color: rgb(199, 21, 47 )
+}
+
+.rgba{
+    color: rgba(100, 199, 45, 0.3)
+}
+/* 16 - hsl */
+.hsl{
+    color: hsl (100,82%,48%)
+}
+
+.hsl-2{
+    color: hsl(201,82%,48% )
+}
+/* 17 bg */
+
+.bg{
+background-color: #000;
+color:yellow;
+}
+
+.bg-2{
+background-color: #a5f;
+color:aliceblue;
+}
+
+/* 18 opacidade bg */
+.bgopacity{
+background-color: #333;
+color:white;
+}
+.bgopacity-2{
+    background-color: #333;
+    color: white;
+    opacity: 50%;
+
+}
+
+/* 20 - bg img */
+.bg-image{
+    padding: 200px;
+    background-image: url(../imagem/download.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+
+}
+/* 21 - centralizar img no bg */
+.centered-bg, 
+.not-centered-bg{
+ background-image: url(../imagem/bridge.jpg);
+ height: 400px;
+ width: 400px;
+}
+
+.centered-bg{
+    background-position: center;  
+    /* posicionar a imagem apartir do centro dela */
+    background-size: cover;
+     /* tamanho de imagem para ela ser redimensionada */
+}
+/* 21 */
+
+.without-paddig,
+.padding{
+    background-color: black;
+    color: white;    
+}
+.padding{
+    padding: 20px;
+    background-color: #a5f;
+}
+/* 22*/
+.height1{
+    height: 200px;
+    width:100px;
+    background-color: aquamarine;
+}
+.height2{
+    height: 500px;
+    background-color: azure;
+}
+
+/* 23 */ 
+
+.paddingindividual{
+    color: white;
+    background-color: #333;
+    padding: 10px 11px 12px 23px;
+}
+/* 24 */
+
+.w-border-box,
+.border-box{
+color:white;
+background-color: #5498;
+width: 400px;
+padding: 50px;
+}
+.border-box{
+background-color: #a5f;
+box-sizing: border-box;
+/* ele irá fazer com que o conteudo respeite o que foi estabelecido no width */
+}
+
+/* 25 */
+
+.border{
+    border: 5px solid red;
+    padding: 10px;
+    margin: 20px 5;
+}
+.border2{
+    border: 5px dotted pink;
+    padding: 10px;
+}
+/* 26 */
+.borderleft{
+border-left: 3px dashed orange;
+}
+.borderbottom{
+    border-bottom: 10px double yellowgreen;
+
+}
+/* 27 */
+.arredondadas{
+    border:6px inset purple;
+    border-radius: 15px;
+    padding: 60px;
+
+}
+.arredondadas-2{
+    border:9px ridge grey;
+    border-radius: 90px;
+    padding:50px
+
+}
+/* 28 */
+.margin{
+    margin:10px;
+    background-color: black;
+    color: white
+
+}
+.margin-2{
+    margin:20px;
+    background-color: aqua;
+
+}
+.margin-3{
+    margin: 5px 10px 12px 9px;
+    background-color: orange;
+
+}
+
+/* 29 */
+.box-model{
+    margin: 20px;
+    background-color: #a5f;
+    padding:15px 25px;
+    border: 5px dashed orange;
+    border-radius:7px;
+    width: 200px;
+    height: 400px;
+}
+/* 30 Desafio  */
+
+#box-model-desafio{
+    outline:5px dotted black;
+    background-color: orangered;
+    height: 300px;
+    width: 500px;
+    border: 5px dotted black;
+    opacity: 60%;
+}
+.desafio-3-titulo{
+    color:white;
+    font-weight: bolder;
+    font-size: 60px;
+    background-color: orangered;
+    border:none;
+
+}
+.desafio-3-texto{
+    color:violet;
+    font-size: 25px;
+    background-color: orangered;
+
+}
+
+/* 31 */
+
+.text-aligned{
+text-align: left;
+}
+.container-center{
+text-align: center;
+background-color: #5CD2E6;
+width: 300px;
+border: 8px ridge #F4E869;
+margin-left:130px;
+}
+
+/* 32 */
+.underline{
+    text-decoration: underline;
+
+}
+.line-through{
+    text-decoration: line-through;
+
+}
+.remover-underline{
+    text-decoration: none;
+    color:#5B0888;
+
+}
+/* 33 */
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+
+/* 34 */
+.spacing{
+    letter-spacing: 10px;
+    border: none;
+}
+/* 35 */
+.serif{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-style: italic;
+
+
+}
+.sans-serif{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+
+}
+.monospace{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+   
+}
+.cursive{
+    font-family: Cursive;
+
+}
+.fantasy{
+    font-family: fantasy;
+
+}
+/* 36 */
+.small{
+    font-size: 6px;
+
+}
+.big{
+    font-size: 78px;
+
+}
+/* 37 */
+.inline-box{
+    width: 50px;
+    height: 50px;
+    background-color: #E55604;
+    margin:10px;
+    display: inline-block;
+    
+}
+.block{
+    background-color: #E5CFF7;
+    margin:10px;
+    display:block;
+}
+
+/* 38 */
+.invisible{
+    display:none;
+}
+/* 39 */
+.static{
+    position:static ;
+    width: 50px;
+    height: 50px;
+    background-color: #E55604;
+}
+.relative{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top:30px;
+    left:40px;
+    background-color: #E55604;
+}
+/* 40 */
+.absolute{
+    position: absolute;
+    background-color: #00eaff;
+    width: 100px;
+    height: 100px;
+    top:2px;
+    right: 2px;
+
+}
+/* 41 */
+.relative-container{
+    width: 300px;
+    height: 300px;
+    border:1px solid rgb(94, 14, 50);
+    margin-top: 120px;
+    position: relative;
+
+}
+.absolute-1,
+.absolute-2{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    position: absolute;
+
+}
+.absolute-1{
+    top: 10px;
+    left:10px;
+    background-color: #a5f;
+}
+/* 42 */
+.fixed{
+    width: 100px;
+    height: 100px;
+    background-color:#004225 ;
+    border:1px solid #E55604;
+    position: fixed;
+    top:50px;
+    right: 100px;
+    color: white;
+}
+
+/* 43 */
+.sticky{
+    width: 100px;
+    height: 100px;
+    background-color:#004225 ;
+    border:1px solid #E55604;
+    position: sticky;
+    top:10px
+    
+}
+/* 44 */
+.absolute-3,
+.absolute-4,
+.absolute-5{
+    width: 50px;
+    height: 50px;
+    background-color:#27005D ;
+    position: absolute;
+}
+.absolute-3{
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.absolute-4{
+    top:10px;
+    left:10px;
+    background-color:#9400FF ;
+    z-index: 3;
+}
+.absolute-5{
+    top:40px;
+    left:40px;
+    background-color: #AED2FF ;
+    z-index: 2;
+}
