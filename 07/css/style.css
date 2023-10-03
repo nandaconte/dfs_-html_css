@@ -1,0 +1,167 @@
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap{
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.box{
+    height: 40px;
+    width: 33%;
+    border: 1px solid orange;
+}
+/*  */
+.center,
+.space-around,
+.end{
+    display:flex;
+    margin-bottom: 20px;
+
+}
+.center .box,
+.space-around .box,
+.space-between .box,
+.end .box{
+    width: 50px;
+
+}
+.center{
+    justify-content: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+
+}
+.end{
+    justify-content: end;
+}
+/*  */
+
+.align-center,
+.align-end,
+.stretch{
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 6px solid purple;
+}
+.align-center .box,
+.align-end .box,
+.stretch .box{
+    width: 50px;
+}
+
+.align-center{
+    justify-content: center;
+}
+.align-end{
+    align-items: flex-end;
+}
+.stretch .box{
+    height: auto;
+    align-items:stretch;
+}
+/*  */
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 7px solid violet;
+    gap:10px;
+    padding: 20px;
+}
+.gap .box{
+    width: 32%;
+}
+/*  */
+.order{
+    display: flex;
+}
+#one{
+    order: 1;
+}
+#two{
+    order: 2;
+}
+#three{
+    order:3;
+}
+/*  */
+.grow{
+    display: flex;
+}
+.grow .box{
+    flex: 1;
+}
+.grow .box-big{
+    flex:2;
+    border: 1px solid orange;
+}
+/*  */
+.basis{
+    display: flex;
+}
+.basis .box-big2{
+    flex-basis:20px;
+    border: 1px solid orange;
+}
+.basis .box-big2{
+    flex-grow: 1;
+    border: 1px solid orange;
+}
+/*  */
+.shrink{
+    display: flex;
+    
+}
+.shrink .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+    border: 1px solid orange;
+}
+.shrink .small{
+    flex-shrink: flex;
+    border: 1px solid orange;
+}
+/*  */
+.shorthand{
+    display: flex;
+
+}
+.shorthand .box{
+    width: auto;
+    flex: 1 1 50px;
+    /* :grow shrink width  */
+}
+
+.shorthand .box-different{
+    flex: 3 1 400px;
+    border: 1px solid orange;
+}
+
+/*  */
+.auto-alignment{
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid sienna;
+}
+.auto-alignment .box-different{
+    align-self: center;
+    width: 200px;
+    height: 60px;
+    border: 1px solid orange;
+}
