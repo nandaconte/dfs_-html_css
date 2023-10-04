@@ -128,11 +128,123 @@ padding: 25px;
 }
 #get-app-container{
     margin-top: 20px;
+    text-align: center;
+    width: 350px;
     
 }
 #get-app-container p{
+    margin:20px 0;
+    font-size: 13px;;
     
 }
 #get-app-container img{
-    width:180px ;
+    width:136px ;
+    height: 40px;
+    
+}
+#get-app-container a{
+    text-decoration: none;
+}
+
+footer{
+    display:flex;
+    text-align: left;
+    max-width: 1000px;
+    margin:50px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ nav #footer-links{
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#footer-links a,
+#copyright{
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+    text-align: center;
+}
+#footer-links li{
+    margin-right: 10px;
+}
+#copyright{
+    margin-top: 10px;
+}
+
+/* celular */
+@media (max-width:450px) {
+    body,
+    html{
+        background-color: #fff;
+        overflow: hidden;
+    }
+    #banner-container{
+        display: none;
+        }
+    #main-container,
+    #form-box{
+        margin-top: 0;
+    }
+    #form-container,
+    #form-box,
+    #register-container,
+    #get-app-container{
+        width: 100%;
+        border: none;
+        justify-content: center;
+    }
+    footer{
+        width: 90%;
+    }
+    #footer-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #copyright{
+        margin-top: 10px;
+    }
+}
+@media (min-width:451px) and (max-width:688px){
+
+#banner-container{
+    display: none;
+}
+#main-container,main{
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+#form-container,
+#form-box,
+#register-container,
+    #get-app-container{
+        width: 100%;
+        justify-content: center;
+    }
+#form-box input{
+    width:90%;
+}
+#btn_enter{
+    width: 250%;
+}
+.line{
+    width: 100%;
+}
+footer{
+width: 50%;
+}
+#footer-links{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#copyright{
+    margin-top: 10px;
+}
 }
